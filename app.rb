@@ -12,7 +12,6 @@ end
   end
   
   post '/checkout' do
-    params[:item][:name]
-    session
+    session[:cart] = params[:item][:name]
   end
 end
