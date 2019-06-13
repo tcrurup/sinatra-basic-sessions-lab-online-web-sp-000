@@ -13,5 +13,6 @@ end
   
   post '/checkout' do
     params[:item][:name]
+    session
   end
 end
