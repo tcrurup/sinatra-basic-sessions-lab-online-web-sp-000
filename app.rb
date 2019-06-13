@@ -13,6 +13,6 @@ end
   
   post '/checkout' do
     params[:item][:name]
-    session[params[:item][:name]] = params[:item][:price]
+    session[params[:item][:name].to_sym] = params[:item][:price]
   end
 end
