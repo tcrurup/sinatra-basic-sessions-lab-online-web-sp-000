@@ -12,7 +12,7 @@ end
   end
   
   post '/checkout' do
-    session[params[:item][:name]] = params[:item][:price]
+    session[:item] = params[:item][:name]
     params[:item][:name]
   end
 end
