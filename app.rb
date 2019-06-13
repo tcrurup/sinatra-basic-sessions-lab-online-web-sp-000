@@ -12,6 +12,6 @@ end
   end
   
   post '/checkout' do
-    @sessions = session
+    @session = session
   end
 end
