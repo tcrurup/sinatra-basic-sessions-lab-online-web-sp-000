@@ -12,10 +12,10 @@ end
   end
   
   post '/checkout' do
-    session[:item] = params[:item][:name]
+    session[:item] = params[:item]
     @session = session
     binding.pry
-    params[:item][:name]
+    params[:item]
     
   end
 end
