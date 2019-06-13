@@ -12,6 +12,6 @@ end
   end
   
   post '/checkout' do
-    @session = session
+    params[:item_name]
   end
 end
